@@ -1,0 +1,14 @@
+.app-download{
+    text-align: center;
+    margin: auto auto;
+    margin-top: 100px;
+    gap: 30px;
+    font-size: max(3vw,20px);
+}
+
+.app-download-platforms{
+    display: flex;
+    flex-direction: column;
+    gap: max(2vw,10px);
+    margin-top: 40px;
+}
