@@ -24,3 +24,5 @@ const foodSchema = new mongoose.Schema({
 })
 
 const foodModal = mongoose.model.food || mongoose.model("food",foodSchema)
+
+export default foodModal;

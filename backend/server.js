@@ -20,6 +20,8 @@ app.get("/",(req,res)=>{
 
 app.use("/api/food",foodRouter);
 
+app.use("/images",express.static("uploads"))
+
 app.listen(port,()=>{
     console.log(`listening to port ${port}`);
 })
