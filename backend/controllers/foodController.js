@@ -45,7 +45,7 @@ const listFood = async(req,res)=>{
     }
 }
 
-const removeFood = async ()=>{
+const removeFood = async (req,res)=>{
     try{
         const food = await foodModal.findById(req.body.id);
         fs.unlink(`uploads/${food.images}`,()=>{})
