@@ -4,6 +4,7 @@ const port = 4000;
 import cors from 'cors';
 import { connectDB } from './config/db.js';
 import foodRouter from './routers/foodRouters.js';
+import userRouter from './routers/userRouter.js';
 
 app.use(express.json());
 
@@ -19,6 +20,8 @@ app.get("/",(req,res)=>{
 })
 
 app.use("/api/food",foodRouter);
+
+app.use("/api/user",userRouter);
 
 app.use("/images",express.static("uploads"))
 
